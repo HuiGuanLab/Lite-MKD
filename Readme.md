@@ -46,6 +46,8 @@ For skeleton mode, we use [alphapose](https://github.com/MVIG-SJTU/AlphaPose)
 # 3 The teacher feature
 
 We also provide extracted teacher fusion features [Feature](https://pan.baidu.com/s/1DzV_adv8q_zPOd31IuZWVA?pwd=8888)
+and the teacher model [model](https://pan.baidu.com/s/1DXZ6lwGCrJIF6sNvjc3iiA?pwd=8888 )
+
 
 
 # 4 Student setup and datasets
