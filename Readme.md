@@ -4,11 +4,14 @@
 ![avatar](Framework.png)
 The figure above shows the framework method of our model.Lite-MKD adopts a multi-modal teacher knowledge learning and single-modal student knowledge distillation architecture. For the input RGB videos of the query and the support set, a modality derivation step is conducted in advance to extract the multi-modal features based on the RGB videos, the extracted multi-modal features (Optical flow, RGB and depth) are then sent to the teacher model for multi-modal learning and action classification. The MFM module is responsible for hierarchical fusion of multi-modal features. The D2M is configured to help the student to mimic the multi-modal knowledge of the teacher model. The knowledge distillation between the teacher model and the student model is multi-level,namely, performed at the support level and the query level. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
  <img src="scatter_plot_ucf101_gflops_high_resolution_00.png" width="45%">
  Performance comparison of our proposed Lite-MKD with previous works (META, OTAM, TRX,and STRM) on UCF101 dataset in terms of accuracyand FLOPs. Our method achieves the best balance betweenmodel performance and complexity. Applying Lite-MKD
 (TRX+MobileNetV3-large) reduces the computational complexity of the TRX by 92.91% (from 1023.3 GFLOPs to 72.6GFLOPs) while sacrificing only 1.34 points of accuracy (from96.1% to 94.76%). TRX* and STRM* represent our own reproduction results using officially released source code.
+=======
+>>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
 =======
 >>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
  
@@ -166,6 +169,7 @@ If you find this repository useful, please consider citing our paper:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -219,5 +223,7 @@ bhl666666
 
 
 
+=======
+>>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
 =======
 >>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
