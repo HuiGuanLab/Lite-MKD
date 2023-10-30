@@ -1,0 +1,45 @@
+predict:
+  predict:
+  - playing_drums
+  - stretching_arm
+  - diving_cliff
+  - cutting_watermelon
+  - riding_elephant
+  real:
+  - playing_drums
+  - stretching_arm
+  - diving_cliff
+  - cutting_watermelon
+  - riding_elephant
+support:
+- kinetics/playing_drums/GxwYfmWoKZM_000001_000011.mp4
+- kinetics/playing_drums/a-BPDML13PI_000114_000124.mp4
+- kinetics/cutting_watermelon/eFBTpjarz0A_000014_000024.mp4
+- kinetics/stretching_arm/-8UxhWDSqfs_000004_000014.mp4
+- kinetics/cutting_watermelon/medWDhSbp8w_000007_000017.mp4
+- kinetics/diving_cliff/74bKDWLCP5A_000051_000061.mp4
+- kinetics/stretching_arm/dZO94OAL8Xs_000161_000171.mp4
+- kinetics/riding_elephant/xQ5k2C3TvTI_000033_000043.mp4
+- kinetics/playing_drums/FEML9P8R_88_000301_000311.mp4
+- kinetics/riding_elephant/AHqarcyYlYg_000005_000015.mp4
+- kinetics/diving_cliff/S3Kkli6hhxI_000003_000013.mp4
+- kinetics/playing_drums/U-pRLha-I7E_000059_000069.mp4
+- kinetics/stretching_arm/2zR7Y57z8l8_000115_000125.mp4
+- kinetics/riding_elephant/SIZOJ6cOn7Y_000026_000036.mp4
+- kinetics/riding_elephant/WiZBXbAL6yQ_000088_000098.mp4
+- kinetics/stretching_arm/4Ky9ppRAezM_000006_000016.mp4
+- kinetics/cutting_watermelon/o_4iyY4w29E_000015_000025.mp4
+- kinetics/stretching_arm/RfYyu5QcJj0_000153_000163.mp4
+- kinetics/riding_elephant/ZgcTZ6DBSqY_000000_000010.mp4
+- kinetics/cutting_watermelon/8MI8_eZJQ-I_000045_000055.mp4
+- kinetics/diving_cliff/Zxgk90rx26o_000004_000014.mp4
+- kinetics/playing_drums/R9P4CeDoYwQ_000205_000215.mp4
+- kinetics/diving_cliff/iC7ecUEojoY_000105_000115.mp4
+- kinetics/cutting_watermelon/DWFLcl1dPvo_000021_000031.mp4
+- kinetics/diving_cliff/rI98kBiRKiY_000013_000023.mp4
+target:
+- kinetics/playing_drums/FB-rJ3ozRc0_000174_000184.mp4
+- kinetics/stretching_arm/vd0IezAdwTU_000006_000016.mp4
+- kinetics/diving_cliff/R3aMKqA03VM_000098_000108.mp4
+- kinetics/cutting_watermelon/CyntmpGVagg_000004_000014.mp4
+- kinetics/riding_elephant/UeYGEawzmc0_000023_000033.mp4

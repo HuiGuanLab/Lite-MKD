@@ -1,0 +1,28 @@
+0:
+    "support":
+        -
+            id: 0
+            class_bc: 0
+            video_idx: 0
+        -
+            id: 1
+            class_bc: 1
+            video_idx: 0
+        -
+            id: 2
+            class_bc: 2
+            video_idx: 0
+        -
+            id: 3
+            class_bc: 3
+            video_idx: 0
+        -
+            id: 4
+            class_bc: 4
+            video_idx: 0
+    "query":
+        -
+            id: 0
+            class_bc: 0
+            video_idx: 1
+
