@@ -1,23 +1,18 @@
 
-# 1 Lite-MKD
+# 1 Lite-MKD: A Multi-modal Knowledge Distillation Framework for Lightweight Few-shot Action Recognition
+---
+
+Source code of our ACM MM'2023 paper  [Lite-MKD: A Multi-modal Knowledge Distillation Framework for Lightweight Few-shot Action Recognition](https://dl.acm.org/doi/10.1145/3581783.3612279)
 
 ![avatar](Framework.png)
+
 The figure above shows the framework method of our model.Lite-MKD adopts a multi-modal teacher knowledge learning and single-modal student knowledge distillation architecture. For the input RGB videos of the query and the support set, a modality derivation step is conducted in advance to extract the multi-modal features based on the RGB videos, the extracted multi-modal features (Optical flow, RGB and depth) are then sent to the teacher model for multi-modal learning and action classification. The MFM module is responsible for hierarchical fusion of multi-modal features. The D2M is configured to help the student to mimic the multi-modal knowledge of the teacher model. The knowledge distillation between the teacher model and the student model is multi-level,namely, performed at the support level and the query level. 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
- <img src="scatter_plot_ucf101_gflops_high_resolution_00.png" width="45%">
- Performance comparison of our proposed Lite-MKD with previous works (META, OTAM, TRX,and STRM) on UCF101 dataset in terms of accuracyand FLOPs. Our method achieves the best balance betweenmodel performance and complexity. Applying Lite-MKD
-(TRX+MobileNetV3-large) reduces the computational complexity of the TRX by 92.91% (from 1023.3 GFLOPs to 72.6GFLOPs) while sacrificing only 1.34 points of accuracy (from96.1% to 94.76%). TRX* and STRM* represent our own reproduction results using officially released source code.
-=======
->>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
-=======
->>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
  
 # 2 Requirements
 ![.](https://img.shields.io/badge/Python-3.9-yellow) ![.](https://img.shields.io/badge/Pytorch-1.12.1-yellow)  
 Use the following instructions to create the corresponding conda environment. 
+
 ```
 conda create -n litemkd python=3.7.7 anaconda
 conda activate litemkd
@@ -47,10 +42,13 @@ For skeleton mode, we use [alphapose](https://github.com/MVIG-SJTU/AlphaPose)
 
 
 
-## 3.3 The teacher feature
+
+## 3.3 The teacher training and features
 
 We also provide extracted teacher fusion features [Feature](https://pan.baidu.com/s/1DzV_adv8q_zPOd31IuZWVA?pwd=8888)
 and the teacher model [model](https://pan.baidu.com/s/1DXZ6lwGCrJIF6sNvjc3iiA?pwd=8888 )
+
+The specific teacher model code and feature extraction steps are shown in [teacher](teacher/readme.md)
 
 There are mainly three steps to processing our dataset. 
 1. Get the raw video frames.
@@ -160,70 +158,15 @@ We use Thop library to measure the efficiency of the model.
 
 # Citation
 If you find this repository useful, please consider citing our paper:
+
 ```
 @inproceedings{litemkd2023,
   title={Lite-MKD: A Multi-modal Knowledge Distillation Framework for Lightweight Few-shot Action Recognition},
-  author={Baolong Liu and Tianyi Zheng and Peng Zheng and Daizong Liu and Xiaoye Q and Junyu Gao and Jianfeng Dong and Xun Wang},
+  author={Baolong Liu and Tianyi Zheng and Peng Zheng and Daizong Liu and Xiaoye Qu and Junyu Gao and Jianfeng Dong and Xun Wang},
+  booktitle={Proceedings of the 31st ACM International Conference on Multimedia},
   year={2023}
 }
 
 ```
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
-
-
-
-
-
-把视频关了
-bhl666666
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
-=======
->>>>>>> 33b6cb5f77c9fb277c9f8ce0858ed87eb5e1e5fa
