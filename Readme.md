@@ -26,9 +26,10 @@ and you can also build a conda environment using the requirements given in envir
 Lite-MKD" has been validated on three datasets, namely "UCF101", "HMDB51", and "Kinetics". You need to prepare these three datasets and sample every video randomly for eight frames.
 
 The data we provide is here:
-[UCF](https://pan.baidu.com/s/1dUl1-98bjhpvipVejIqSlQ?pwd=8888)
-[Kinetics](https://pan.baidu.com/s/1B0N_oSnQL6J-R9uYrJ3FCw?pwd=8888 )
-[HMDB](https://pan.baidu.com/s/1FSWKVAduiaVAYTUvSFmyNA?pwd=8888)
+[UCF](https://pan.baidu.com/s/1KxeZxwKF3ISnIzV4T_1QRw?pwd=8888)
+[Kinetics](https://pan.baidu.com/s/1g6nP33DXQizyqPQhRbPX8g?pwd=8888 )
+[HMDB](https://pan.baidu.com/s/1eIvZjzMgEie-x3fYvVa2JA?pwd=8888 
+)
 
 ##  3.2 Modal derivative
 
@@ -133,9 +134,9 @@ sh test.sh
 ```
 
 We release several pretrained models:
-- Lite-MKD-resnet18 on ucf
-- Lite-MKD-resnet18 on kinetics
-- Lite-MKD-resnet18 on hmdb
+- Lite-MKD-resnet18 on ucf [ucf_model](https://pan.baidu.com/s/1EYsZOJmhwp1AV18XHLyG2g?pwd=8888) 
+- Lite-MKD-resnet18 on kinetics [kinetics_model](https://pan.baidu.com/s/1EYsZOJmhwp1AV18XHLyG2g?pwd=8888) 
+- Lite-MKD-resnet18 on hmdb [hmdb_model](https://pan.baidu.com/s/1NI_O3MoJ5u7aC_O9UuJINw?pwd=8888)
 
 | **Backbone**    | **Distillation**  | **Kinetics** | **UCF101** | **HMDB51** |
 | ------------- | --------------| ---------|----------|---------|
