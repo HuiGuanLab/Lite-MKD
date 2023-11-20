@@ -55,7 +55,7 @@ There are mainly three steps to processing our dataset.
 1. Get the raw video frames.
 2. Get the Teacher model
 3. Get the Teacher Features from Teacher model
-   
+
 ## 3.4 File Structure
 
 Download the above data and save to ./data folder.
@@ -128,10 +128,26 @@ data
 
 We have provided sh scripts for both testing and training. You can modify the corresponding parameters to perform different experimental settings. If you want to train the model, you can uses given in [train_wandb.sh](train_wandb.sh) script, and if you want to test the model, you can use [test.sh](test.sh) script.
 
+
 ```
 sh train_wandb.sh
 sh test.sh
 ```
+
+
+
+The parameters in the script file [train_wandb.sh](train_wandb.sh) and the options file [options.py](options.py) need to be modified according to the specific location of the data.
+
+```
+train_wandb.sh
+-  Modify DEVICES based on the specific GPU configuration.
+-  Modify teacher_checkpoint based on the location where the teacher model is stored.
+options.py
+-  Modify args.traintestlist to the location where the dataset split files are stored.
+-  Modify args.RGB_path to the location where the pre-processed data frames of each dataset are stored.
+-  Modify args.teacher_path to the location where the pre-processed features of the teacher model are stored.
+```
+
 
 We release several pretrained models:
 - Lite-MKD-resnet18 on ucf [ucf_model](https://pan.baidu.com/s/1EYsZOJmhwp1AV18XHLyG2g?pwd=8888) 
