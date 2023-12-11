@@ -150,7 +150,7 @@ options.py
 
 
 We release several pretrained models:
-- Lite-MKD-resnet18 on ucf [ucf_model](https://pan.baidu.com/s/1EYsZOJmhwp1AV18XHLyG2g?pwd=8888) 
+- Lite-MKD-resnet18 on ucf [ucf_model](链接：https://pan.baidu.com/s/1EZeQ9FprEtGirmueaD84rg?pwd=8888) 
 - Lite-MKD-resnet18 on kinetics [kinetics_model](https://pan.baidu.com/s/1EYsZOJmhwp1AV18XHLyG2g?pwd=8888) 
 - Lite-MKD-resnet18 on hmdb [hmdb_model](https://pan.baidu.com/s/1NI_O3MoJ5u7aC_O9UuJINw?pwd=8888)
 

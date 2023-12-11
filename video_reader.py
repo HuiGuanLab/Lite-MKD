@@ -78,15 +78,15 @@ class VideoDataset(torch.utils.data.Dataset):
         self.train_split = Split()
         self.test_split = Split()
         
-        self.train_split_teacher = Split()
-        self.test_split_teacher = Split()
+        # self.train_split_teacher = Split()
+        # self.test_split_teacher = Split()
 
         self.check=[]
 
         self.setup_transforms()
         self._select_fold()
         self.read_dir()
-        self.read_teacher_feature_dir()
+        # self.read_teacher_feature_dir()
 
     """Setup crop sizes/flips for augmentation during training and centre crop for testing"""
     def setup_transforms(self):
@@ -194,7 +194,7 @@ class VideoDataset(torch.utils.data.Dataset):
         print("loaded {}".format(self.RGB_path))
         print("train: {}, test: {}".format(len(self.train_split), len(self.test_split)))
 
-    def read_teacher_feature_dir(self):  
+    # def read_teacher_feature_dir(self):  
         # load zipfile into memory
         if self.teacher_path.endswith('.zip'):  
             self.tzip = True
@@ -286,7 +286,7 @@ class VideoDataset(torch.utils.data.Dataset):
         else:
             return self.test_split
     
-    def get_train_or_test_db_teacher(self, split=None): 
+    # def get_train_or_test_db_teacher(self, split=None): 
 
         if split is None:
             get_train_split = self.train
@@ -388,6 +388,8 @@ class VideoDataset(torch.utils.data.Dataset):
     def get_teacher_feature(self, label, idx=-1):  
         c_feature_teacher = self.get_train_or_test_db_teacher()
         path, vid_id = c_feature_teacher.get_rand_vid(label, idx)
+        teacher = self.teacher_path.split('/')[2]
+        final_path = path[0].split('/')[0]+'/'+path[0].split('/')[1]+'/'+teacher+'/'+path[0].split('/')[3]+'/'+path[0].split('/')[4]+'/'+'feature.npy'
         feature=np.load(path)
         feature=torch.from_numpy(feature)
         return feature, vid_id
@@ -397,7 +399,7 @@ class VideoDataset(torch.utils.data.Dataset):
 
         #select classes to use for this task
         c = self.get_train_or_test_db()  
-        c_feature_teacher = self.get_train_or_test_db_teacher()   
+        # c_feature_teacher = self.get_train_or_test_db_teacher()   
 
         classes = c.get_unique_classes()  
         batch_classes = random.sample(classes, self.way) 
