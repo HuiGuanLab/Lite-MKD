@@ -26,10 +26,9 @@ and you can also build a conda environment using the requirements given in envir
 Lite-MKD" has been validated on three datasets, namely "UCF101", "HMDB51", and "Kinetics". You need to prepare these three datasets and sample every video randomly for eight frames.
 
 The data we provide is here:
-[UCF](https://pan.baidu.com/s/1KxeZxwKF3ISnIzV4T_1QRw?pwd=8888)
-[Kinetics](https://pan.baidu.com/s/1g6nP33DXQizyqPQhRbPX8g?pwd=8888 )
-[HMDB](https://pan.baidu.com/s/1eIvZjzMgEie-x3fYvVa2JA?pwd=8888 
-)
+[UCF](https://pan.baidu.com/s/1u_CwGAOIM76Pbi4w3P6xrQ?pwd=xnve)
+[Kinetics](https://pan.baidu.com/s/1tjHwjk7t2qPpDN3SCmXcfw?pwd=n73z)
+[HMDB](https://pan.baidu.com/s/1U0alWcdjo8ItTbLfboOHcg?pwd=ud34)
 
 ##  3.2 Modal derivative
 
